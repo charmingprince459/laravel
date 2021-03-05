@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/Anand', function () {
     return view('welcome');
 });
+
+// Route::get('/hello', function () {
+//     return view('firstpage');
+// });
+
+// Route::get('/Babe', function () {
+//     return view('Anandpage');
+// });
+
+Route::get('/hello','App\Http\Controllers\myController@index');
